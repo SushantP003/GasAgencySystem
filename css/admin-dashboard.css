@@ -1,0 +1,128 @@
+/* admin-dashboard.css */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6; /* Light background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  .admin-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .admin-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .admin-header h2 {
+    color: #006d3b; /* HP Gas green */
+    font-size: 28px;
+  }
+  
+  .filter-section {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .filter-section label {
+    font-size: 16px;
+    margin-right: 10px;
+  }
+  
+  #statusFilter {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+  }
+  
+  #statusFilter:focus {
+    border-color: #006d3b;
+    box-shadow: 0 0 8px rgba(0, 109, 59, 0.5);
+  }
+  
+  .notifications {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notifications ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .notifications li {
+    background-color: #e9f5e3;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 16px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px 18px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #006d3b; /* HP Gas green */
+    color: white;
+    font-size: 16px;
+  }
+  
+  td {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    background-color: #006d3b; /* HP Gas green */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005429;
+  }
+  

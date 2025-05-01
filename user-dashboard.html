@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="css/user-dashboard.css" />
+</head>
+<body>
+  <div class="dashboard-container">
+
+    <div class="header">
+      <h2>Welcome to Your Dashboard</h2>
+      <button class="logout-btn" onclick="logout()">Logout</button>
+    </div>
+
+    <div id="notifications" class="notifications"></div>
+
+    <div id="userDetails" class="card">
+      <p><strong>Name:</strong> <span id="name"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Phone:</strong> <span id="phone"></span></p>
+      <p><strong>Address:</strong> <span id="address"></span></p>
+      <p><strong>Remaining Cylinders:</strong> <span id="remaining"></span></p>
+    </div>
+
+    <div class="button-group">
+      <button onclick="window.location.href='book-cylinder.html'">🛒 Book Cylinder</button>
+      <button onclick="window.location.href='booking-history.html'">📜 View History</button>
+    </div>
+    
+  </div>
+
+  <script type="module" src="js/user-dashboard.js"></script>
+  <script>
+    function logout() {
+      localStorage.clear();
+      sessionStorage.clear();
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>

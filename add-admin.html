@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Add Admin - Gas Booking</title>
+  <link rel="stylesheet" href="css/add-admin.css" />
+</head>
+<body>
+  <div class="admin-container">
+    <div class="admin-header">
+      <h2>Register New Admin</h2>
+    </div>
+
+    <form id="adminForm">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Admin Name" required />
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="userId" placeholder="Admin ID" required />
+      </div>
+
+      <div class="form-group">
+        <input type="email" id="email" placeholder="Email" required />
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="phone" placeholder="Phone Number" required />
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="address" placeholder="Address" required />
+      </div>
+
+      <div class="form-group">
+        <input type="password" id="password" placeholder="Password" required />
+      </div>
+
+      <div class="form-group">
+        <input type="text" id="adminKey" placeholder="Secret Admin Key" required />
+      </div>
+
+      <button type="submit">Create Admin Account</button>
+    </form>
+  </div>
+
+  <script type="module" src="js/add-admin.js"></script>
+</body>
+</html>

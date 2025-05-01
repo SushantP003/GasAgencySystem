@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Book a Cylinder</title>
+  <link rel="stylesheet" href="css/book-cylinder.css" />
+</head>
+<body>
+  <div class="booking-container">
+    <h2>Book a New Cylinder</h2>
+
+    <form id="bookingForm">
+      <label>Select Payment Method:</label><br />
+      <div class="payment-options">
+        <label><input type="radio" name="payment" value="COD" required> Cash on Delivery</label>
+        <label><input type="radio" name="payment" value="UPI" required> UPI (Paytm)</label>
+      </div>
+
+      <div id="upiSection" class="upi-section" style="display: none;">
+        <p>Scan this QR code to pay:</p>
+        <img src="images/dummy-qr.png" alt="UPI QR Code" width="200" />
+      </div>
+
+      <button type="submit">Submit Booking</button>
+    </form>
+  </div>
+
+  <script type="module" src="js/book-cylinder.js"></script>
+</body>
+</html>

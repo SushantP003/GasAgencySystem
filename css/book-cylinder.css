@@ -1,0 +1,75 @@
+/* book-cylinder.css */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f6f8;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .booking-container {
+    width: 90%;
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    text-align: center;
+    color: #006d3b; /* HP Gas green */
+    margin-bottom: 25px;
+  }
+  
+  label {
+    font-weight: 500;
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .payment-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .upi-section {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .upi-section img {
+    border: 2px solid #006d3b;
+    border-radius: 8px;
+  }
+  
+  button {
+    width: 100%;
+    background-color: #006d3b;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #004e2c;
+  }
+  
+  @media (max-width: 600px) {
+    .booking-container {
+      padding: 20px;
+    }
+  }
+  

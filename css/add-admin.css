@@ -1,0 +1,80 @@
+/* add-admin.css */
+
+/* General Reset */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f3f4f6; /* Light background */
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Main Container */
+  .admin-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .admin-header h2 {
+    color: #006d3b; /* HP Gas green */
+    font-size: 28px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin: 8px 0;
+  }
+  
+  input:focus {
+    border-color: #006d3b;
+    box-shadow: 0 0 8px rgba(0, 109, 59, 0.5);
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background-color: #006d3b; /* HP Gas green */
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #005429;
+  }
+  
+  button:active {
+    background-color: #00411b;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .admin-container {
+      width: 90%;
+    }
+  }
+  
